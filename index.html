@@ -4,55 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google tag (gtag.js) - Placeholder -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=PLACEHOLDER-ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'PLACEHOLDER-ID');
-    </script>
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6KQKG7TEB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J6KQKG7TEB');
+</script>
     <title>FCA Sunil Chapain - Contact Page</title>
     <style>
         body {
             margin: 0;
-            font-family: 'Verdana', sans-serif; /* Changed Font */
-            background: url('images/bg.jpg') no-repeat center center fixed;
-            background-sizden;
+            font-family: 'Arial', sans-serif;
+            background: url('images/bg.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #f0f0f0;
+            overflow-x: hidden;
             animation: backgroundPulse 10s infinite;
         }
-    
+
         .header {
-            background-coloe: cover;
-            color: white;
-            overflow-x: hidr: #0e0e0e; /* Professional Dark Theme */
-            padding: 10px 0;
-            color: rgb(247, 247, 247);
+            background-color: #333;
+            padding: 20px 0;
             text-align: center;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            border-bottom: 2px solid #0d47a1; /* Blue Border for Professionalism */
+            border-bottom: 3px solid #0077cc;
         }
-    
+
+        .header h1, .personal-info h2, .personal-info h3, .personal-info h4 {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
         .date-time {
             color: #b2ebf2;
-        }
-    
-        .date-time {
             font-size: 1.2em;
-            margin-bottom: 5px;
             animation: fadeIn 2s ease-out;
         }
-    
+
         .welcome-message {
-            font-size: 1.8em;
+            font-size: 2em;
             margin: 10px 0;
             animation: fadeIn 3s infinite alternate;
         }
-    
+
         .container {
             text-align: center;
             padding: 80px 20px 20px;
@@ -65,9 +68,10 @@
             height: 550px; 
             margin: 20px auto;
             overflow: hidden;
-            //border-radius: 10px;
+            border-radius: 10px;
+            border:none;
             animation: slideIn 2s ease-out;
-            border: 3px solid #0d47a1; /* Blue for Professionalism */
+            
         }
 
         .carousel img {
@@ -77,80 +81,75 @@
             border-radius: 10px;
             margin: 0 auto;
         }
-
         .personal-info {
             font-size: 1.5em;
-            margin: 20px 0;
+            margin: 40px 0;
             animation: fadeIn 2s ease-out;
         }
 
         .buttons-section {
-            margin-top: 20px;
+            margin-top: 30px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 15px;
+            gap: 20px;
             animation: slideInFromRight 2s ease-out;
         }
 
         .buttons-section button {
-            padding: 15px 25px;
-            font-size: 1em;
-            color: white;
-            background-color: #0d47a1; /* Blue Button for Consistency */
+            padding: 15px 30px;
+            font-size: 1.1em;
+            color: #fff;
+            background-color: #0077cc;
             border: none;
-            border-radius: 50px;
+            border-radius: 30px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s;
-            flex: 0 0 calc(50% - 20px);
+            flex-grow: 1;
         }
 
         .buttons-section button:hover {
-            background-color: #1976d2;
-            transform: scale(1.2);
+            background-color: #005fa3;
+            transform: scale(1.05);
         }
 
         .dropdown {
             position: relative;
             display: inline-block;
-            margin-top: 20px;
         }
 
         .dropdown button {
-            padding: 15px 20px;
-            font-size: 1em;
-            color: white;
-            background-color: #004d40; /* Teal for Dropdown */
+            padding: 15px 25px;
+            font-size: 1.2em;
+            text-decoration:overline;
+            
+            color: #fff;
+            background-color: #000;
             border: none;
-            border-radius: 50px;
+            border-radius: 30px;
             cursor: pointer;
-            width: 90%;
-            max-width: 300px;
-            text-align: center;
             transition: background-color 0.5s, transform 0.5s;
         }
 
         .dropdown button:hover {
             background-color: #00796b;
-            transform: scale(1.2);
+            transform: scale(1.05);
         }
 
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #004d40;
-            min-width: 200px;
+            text-decoration:solid;
+            background-color: #009688;
+            min-width: 160px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
             border-radius: 8px;
-            overflow: hidden;
         }
 
         .dropdown-content button {
             color: white;
             padding: 12px 16px;
-            text-decoration: none;
-            display: block;
             text-align: left;
             border: none;
             background: none;
@@ -159,8 +158,7 @@
         }
 
         .dropdown-content button:hover {
-            background-color: #1de9b6;
-            color: #004d40;
+            background-color: #4db6ac;
         }
 
         .dropdown:hover .dropdown-content {
@@ -189,7 +187,7 @@
             animation: fadeIn 0.5s ease-in-out;
             color: #333;
             font-size: 1.2em;
-            position: relative;
+            position:relative;
         }
 
         .popup-content p {
@@ -216,14 +214,14 @@
             text-align: center;
             margin-top: 40px;
             padding: 20px;
-            background-color: #0e0e0e;
+            background-color: #333;
         }
 
         .footer button {
             padding: 10px 20px;
             font-size: 1em;
             color: white;
-            background-color: #004d40;
+            background-color: #009688;
             border: none;
             border-radius: 50px;
             cursor: pointer;
@@ -235,14 +233,14 @@
         }
 
         @media (max-width: 768px) {
-            .welcome-message {
-                font-size: 1.5em;
+            .welcome-message, .buttons-section button, .dropdown button {
+                font-size: 1em;
             }
-
-            .buttons-section button {
-                font-size: 0.9em;
+            .buttons-section button, .dropdown button {
                 padding: 10px 15px;
-                flex: 0 0 100%;
+            }
+            .carousel {
+                width: 95%;
             }
         }
 
@@ -262,100 +260,50 @@
         }
 
         @keyframes backgroundPulse {
-            0% { background-color: #0e0e0e; }
-            50% { background-color: #1a237e; }
-            100% { background-color: #0e0e0e; }
-        }
-
-        /* Styles for the Name Div */
-        #name {
-            background: rgba(255, 255, 255, 0.7);
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-            width: fit-content;
-            margin: auto;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            animation: fadeIn 2s ease-in-out, slideUp 2s ease-out;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        #name h2 {
-            font-size: 2em;
-            margin: 0;
-            color: #00090b;
-            opacity: 0;
-            animation: fadeIn 2s ease-in-out forwards 0.5s;
-        }
-
-        #name h3 {
-            font-size: 1.5em;
-            margin: 0;
-            color: #4c06fd;
-            opacity: 0;
-            animation: fadeIn 2s ease-in-out forwards 1s;
-        }
-        #name h4 {
-            font-size: 1em;
-            margin: 0;
-            color: #070017;
-            opacity: 0;
-            animation: fadeIn 2s ease-in-out forwards 1s;
-        }
-
-        @keyframes slideUp {
-            0% {
-                transform: translateY(30%);
-            }
-            100% {
-                transform: translateY(0);
-            }
+            0%, 100% { background-color: #333; }
+            50% { background-color: #555; }
         }
     </style>
 </head>
 <body>
     <div class="header">
         <div class="date-time" id="date-time"></div>
-        <h4><div class="welcome-message" id="welcome-message"></div></h4>
+        <h1 class="welcome-message" id="welcome-message">Welcome to My Contact Page</h1>
     </div>
 
-    <br><br>
     <div class="container">
         <div class="carousel" id="carousel">
             <img src="images/1.JPG" alt="Photo 1">
             <img src="images/2.jpg" alt="Photo 2">
-           
         </div>
 
         <div class="personal-info">
             <div id="name">
-                <p><h2>FCA Sunil Chapain</h2></p>
-                <p><h3>Principal</h3>,<h3> Sunil Chapain & Associates</h3></p>
-                <p><h4> 8th Floor, Trade Tower Nepal</h4></p>
+                <h2>FCA Sunil Chapain</h2>
+                <h3>Principal, Sunil Chapain & Associates</h3>
+                <h4>8th Floor, Trade Tower Nepal, Thapathali, Kathmandu</h4>
             </div>
         </div>
 
         <div class="dropdown">
-            <button><h3>QR Codes</h3></button>
+            <button>QR Codes</button>
             <div class="dropdown-content">
-                <button onclick="showPopup('images/call.png')"><b>&#x1F4F7; Phone</b></button>
-                <button onclick="showPopup('images/sms.png')"><b>&#x1F4F7; SMS</b></button>
-                <button onclick="showPopup('images/whatsapp.png')"><b>&#x1F4F7; WhatsApp</b></button>
-                <button onclick="showPopup('images/email.png')"><b>&#x1F4F7; Email</b></button>
-                <button onclick="showPopup('images/facebook.png')"><b>&#x1F4F7; Facebook</b></button>
-                <button onclick="showPopup('images/vcard.png')"><b>&#x1F4F7; Share my Details</b></button>
+                <button onclick="showPopup('images/call.png')">Phone</button>
+                <button onclick="showPopup('images/sms.png')">SMS</button>
+                <button onclick="showPopup('images/whatsapp.png')">WhatsApp</button>
+                <button onclick="showPopup('images/email.png')">Email</button>
+                <button onclick="showPopup('images/facebook.png')">Facebook</button>
+                <button onclick="showPopup('images/vcard.png')">Share my Details</button>
             </div>
         </div>
 
         <div class="buttons-section">
-            <button onclick="window.open('tel:+9779851228766', '_self')"><b>&#x1F4DE; Call</b></button>
-            <button onclick="window.open('sms:+9779851228766', '_self')"><b>&#x1F4F1; SMS</b></button>
-            <button onclick="sendWhatsApp()"><b>&#x1F4AC; WhatsApp Message</b></button>
-            <button onclick="sendEmail()"><b>&#x2709; Send Email</b></button>
-            <button onclick="window.open('https://www.facebook.com/schapain1', '_blank')"><b>&#x1F4F7; Facebook</b></button>
-            <button onclick="downloadVCard()">&#x1F4C1; Save my number</button>
+            <button onclick="window.open('tel:+9779851228766', '_self')">Call Me</button>
+            <button onclick="window.open('sms:+9779851228766', '_self')">Send SMS</button>
+            <button onclick="sendWhatsApp()">WhatsApp Message</button>
+            <button onclick="sendEmail()">Send Email</button>
+            <button onclick="window.open('https://www.facebook.com/schapain1', '_blank')">Visit Facebook</button>
+            <button onclick="downloadVCard()">Save my number</button>
         </div>
     </div>
 
@@ -367,19 +315,17 @@
     </div>
 
     <div class="footer">
-        <b>
         <button onclick="sharePage()">Share This Page</button>
         <button onclick="showPopup('images/page.png')">Share QR</button>
         <button onclick="showDeveloperInfo()">About Developer</button>
-        </b>
     </div>
 
     <div class="popup" id="developer-popup">
         <div class="popup-content">
-            <span class="close-btn" onclick="hidePopup('developer-popup')">&times;</span>
-            <b><p>This page was developed with love by Anup Chapain. For any inquiries or custom page development, feel free to get in touch!</p>
+            <span the="close-btn" onclick="hidePopup('developer-popup')">&times;</span>
+            <p>This page was developed by Anup Chapain. For inquiries or custom development, contact me!</p>
             <button onclick="sendDeveloperEmail()">Send me an Email</button>
-            <button onclick="window.open('https://www.instagram.com/anupcp/', '_blank')">See Insta</button></b>
+            <button onclick="window.open('https://www.instagram.com/anupcp/', '_blank')">See Insta</button>
         </div>
     </div>
 
@@ -390,39 +336,6 @@
             document.getElementById('date-time').textContent = now.toLocaleDateString('en-US', options);
         }
         setInterval(updateDateTime, 1000);
-        updateDateTime();
-
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('#carousel img');
-        const totalSlides = slides.length;
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.style.display = i === index ? 'block' : 'none';
-            });
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            showSlide(currentSlide);
-        }
-
-        setInterval(nextSlide, 6000);
-        showSlide(currentSlide);
-
-        const healingQuotes = [
-            "Your success is our pride.",
-            "Chartered Accountancy is a journey of lifelong learning.",
-            "Providing the best solutions for financial growth.",
-        ];
-
-        function showHealingQuote() {
-            const quoteIndex = Math.floor(Math.random() * healingQuotes.length);
-            document.getElementById('welcome-message').innerText = healingQuotes[quoteIndex];
-        }
-
-        setInterval(showHealingQuote, 6000);
-        showHealingQuote();
 
         function showPopup(imageSrc) {
             const popup = document.getElementById('generic-popup');
@@ -457,9 +370,7 @@
                     url: window.location.href
                 }).then(() => {
                     console.log('Thanks for sharing!');
-                }).catch((error) => {
-                    console.error('Error sharing:', error);
-                });
+                }).catch(console.error);
             } else {
                 alert('Sharing is not supported on this device. Please use the QR code instead.');
             }
