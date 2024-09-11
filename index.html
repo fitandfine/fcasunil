@@ -330,6 +330,8 @@ html, body {
             <p>This page was developed by Anup Chapain. For inquiries or custom development, contact me!</p>
             <button onclick="sendDeveloperEmail()">Send me an Email</button>
             <button onclick="window.open('https://www.instagram.com/anupcp/', '_blank')">See Insta</button>
+            <br>
+              <button onclick="download()">Download Printable Cards (password Required)</button>
         </div>
     </div>
 
@@ -396,6 +398,17 @@ html, body {
             document.getElementById('img2').style.display = currentImage ? 'block' : 'none';
         }
         setInterval(toggleImages, 3000); // Change image every 3 seconds
+    </script>
+    <script>
+         function download() {
+            const link = document.createElement('a');
+            link.href = 'images/Vcards Print a4 Landscape.pdf';  // Path to the PDF file in the data folder
+            link.download = 'passwordcasunil.pdf';  // File name for the download
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
     </script>
     
 </body>
