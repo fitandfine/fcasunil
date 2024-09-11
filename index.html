@@ -16,26 +16,25 @@
 </script>
     <title>FCA Sunil Chapain - Contact Page</title>
     <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: url('images/bg.webp') no-repeat center center fixed;
-            background-size: cover;
-            color: #f0f0f0;
-            overflow-x: hidden;
-            animation: backgroundPulse 10s infinite;
-        }
+       body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('images/bg.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #f0f0f0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;  /* Ensures vertical stacking of header, content, and footer */
+    justify-content: space-between;  /* Distributes space between content */
+    height: 100vh;  /* Full viewport height */
+}
 
-        .header {
-            background-color: #333;
-            padding: 20px 0;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 3px solid #0077cc;
-        }
+.header {
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    border-bottom: 3px solid #0077cc;
+}
 
         .header h1, .personal-info h2, .personal-info h3, .personal-info h4 {
             background-color: rgba(0, 0, 0, 0.6);
@@ -55,11 +54,14 @@
             margin: 10px 0;
             animation: fadeIn 3s infinite alternate;
         }
-
         .container {
-            text-align: center;
-            padding: 80px 20px 20px;
-            animation: fadeIn 2s ease-out;
+    text-align: center;
+    padding: 20px;
+    flex-grow: 1;  /* Allows the container to fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centers content vertically within the container */
+    animation: fadeIn 2s ease-out;
         }
     
         .carousel {
@@ -73,14 +75,11 @@
             animation: slideIn 2s ease-out;
             
         }
-
         .carousel img {
-            height: 100%;
-            width: auto;
-            display: block;
-            border-radius: 10px;
-            margin: 0 auto;
-        }
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;  /* Ensures image aspect ratio is maintained without cropping */
+}
         .personal-info {
             font-size: 1.5em;
             margin: 40px 0;
@@ -109,7 +108,7 @@
         }
 
         .buttons-section button:hover {
-            background-color: #005fa3;
+            background-color: #000305ce;
             transform: scale(1.05);
         }
 
@@ -158,7 +157,7 @@
         }
 
         .dropdown-content button:hover {
-            background-color: #4db6ac;
+            background-color: #0077cc;
         }
 
         .dropdown:hover .dropdown-content {
@@ -209,13 +208,18 @@
             transform: rotate(90deg);
             color: #c0392b;
         }
+/* Ensures footer is always at the bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
         .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #333;
-        }
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    width: 100%;
+}
 
         .footer button {
             padding: 10px 20px;
@@ -273,8 +277,8 @@
 
     <div class="container">
         <div class="carousel" id="carousel">
-            <img src="images/1.JPG" alt="Photo 1">
-            <img src="images/2.jpg" alt="Photo 2">
+            <img src="images/1.JPG" alt="Photo 1" id="img1" style="display: block;">
+            <img src="images/2.jpg" alt="Photo 2" id="img2" style="display: none;">
         </div>
 
         <div class="personal-info">
@@ -384,5 +388,15 @@
             window.location.href = "mailto:pleasedontgetconfused@gmail.com?subject=Enquiry From Sunil's page";
         }
     </script>
+    <script>
+        let currentImage = 1;
+        function toggleImages() {
+            currentImage = 1 - currentImage;  // Toggles between 0 and 1
+            document.getElementById('img1').style.display = currentImage ? 'none' : 'block';
+            document.getElementById('img2').style.display = currentImage ? 'block' : 'none';
+        }
+        setInterval(toggleImages, 3000); // Change image every 3 seconds
+    </script>
+    
 </body>
 </html>
